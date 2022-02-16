@@ -1,0 +1,176 @@
+:root {
+    --color-white: #D5D4D8;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+  background: #1F2937;
+  margin: 0 auto;
+  max-width: 550px;
+  width: 90%;
+  min-height: 660px;
+  border-radius: 4px;
+}
+
+.card-header {
+    background-color: #3A69D2;
+    color: #fff;
+    padding: 2em 0 ;
+    text-align: center;
+}
+h1 {
+    margin-block: 0;
+    font-size: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.card-header p {
+    margin-top: .5em;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.card-body {
+    background-color: #1F2937;
+    color: #D5D4D8;
+    padding: 2.5em;
+}
+
+.card-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: .75em 1.5em;
+    font-size: .9em;
+    font-family: inherit;
+    color: #4A4E74;
+    background: #D1D4F4;
+    border: 1px solid #D5D4D8;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+.btn:active {
+    transform: scale(.97);
+}
+
+.cta {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background: #3A69D2;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    font-size: 1em;
+    margin-top: 3em;
+    grid-column: 1 / -1;
+    cursor: pointer;
+}
+
+.cta img {
+    height: .75em;
+}
+
+.card-list {
+    margin-top: 3em;
+}
+
+.card-list-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+}
+
+.card-list-body {
+    border-bottom: 1px solid var(--color-white);
+    padding-bottom: 2em;
+}
+
+.card-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.card-list-item button {
+    font-size: .5em;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.card-list-item > p {
+    font-weight: bold;
+}
+
+.card-list-item > .price {
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.card-list-item > .price span {
+    color: #D5D4D8;
+    font-weight: 300;
+}
+
+.card-list-footer {
+    font-size: .75em;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1em;
+}
+
+.card-list-footer > p {
+    margin: 0;
+}
+
+.total-amount, .total {
+    text-align: right;
+}
+
+.total {
+    font-size: 2.2em;
+}
